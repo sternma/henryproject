@@ -11,8 +11,8 @@ const App = () => {
     return (
         <Container maxidth = "lg">
             <AppBar className={classes.appBar} position = "static" color = "inherit">
-                <Typography className={classes.heading} varaint = "h2" align = "center">Memories</Typography>
-                <img className={classes.image} src= {memories} alt = "memories" height = "60" />
+                <img className={classes.image} src= {memories} alt = "Week Schedule" height = "60" />
+                <Typography className={classes.heading} varaint = "h2" align = "center">Week Schedule</Typography>
             </AppBar>
             <Grow in>
                 <Container>
