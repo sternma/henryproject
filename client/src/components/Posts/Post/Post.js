@@ -1,10 +1,10 @@
 import React from 'react';
 import useStyles from './styles';
 
-const Post = () => {
+const Post = ({ name }) => {
     const classes = useStyles();
     return(
-        <h1>POST</h1>
+        <h1>{name}</h1>
     )
 }
 
