@@ -1,22 +1,15 @@
 import React from 'react';
+import { Typography, Paper } from '@material-ui/core';
+import useStyles from './styles';
 
-const Task = ({taskName, taskDetails, completeStatus}) => {
+const Task = ({ name, details, creator }) => {
+    console.log(name)
     return(
-        <>
-        <h3>Task Name:</h3>
-        <p>{taskName}</p>
-        <h3>Task Details:</h3>
-        <ul>{
-                taskDetails.map(function (detail) {
-                    return '<li>' + detail + '</li>';
-                })
-                
-            }</ul>
-
-        
-        <h3>Complete?</h3>
-        <p>{completeStatus}</p>
-        </>
+        <Paper>
+            <Typography variant="h6">{name}</Typography>
+            <Typography variant="h6">By: {creator}</Typography>
+            <Typography variant="body2" gutterBottom={true} paragraph={true}>Details: {details}</Typography>
+        </Paper>
     )
 }
 
